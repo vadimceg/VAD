@@ -5,7 +5,8 @@ public class Main {
     public static void main(String[] args) {
 
         //P1
-        System.out.println("Welcome to the Shopping Cart");
+        System.out.println("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-");
+        System.out.println("Welcome to the Shopping Cart!");
         System.out.println("_-_-_-_-_-_-_-_-_-_-_-_-_-_-_");
         System.out.println(" ");
 
@@ -69,8 +70,6 @@ public class Main {
         for (String item : items2) {
             System.out.println(item + ". ");
         }
-
-        
 
         }
 
