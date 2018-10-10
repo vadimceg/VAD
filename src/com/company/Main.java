@@ -17,7 +17,6 @@ public class Main {
         message = "- " +custName +" wants to purchase a " +itemDesc;
 
         System.out.println(message);
-        System.out.println(" ");
 
         //P3
         double price = 29.99;
@@ -25,10 +24,38 @@ public class Main {
         double tax = 1.04;
         double total;
 
-        message = custName +" wants to purchase " +quantity +" " +itemDesc;
+        message = "- " +custName +" wants to purchase " +quantity +" " +itemDesc;
 
         total = quantity * price * tax;
         System.out.println("Total cost with tax: "+total);
+        System.out.println(" ");
+
+        //P4
+        if (quantity > 1){
+            message = message +"s";
+        }
+
+        boolean outOfStock = false;
+        if (outOfStock){
+            System.out.println(itemDesc +" is out of stock.");
+        }
+
+        else {
+            System.out.println(message);
+            System.out.println("Total cost with tax: "+total);
+            System.out.println(" ");
+        }
+
+        //P5
+        String[] items = {"Shirt", "Socks", "Scarf", "Belt"};
+
+        message = "- " +custName +" wants to choose from " + items.length +" items.";
+        System.out.println(message);
+
+        System.out.println("(" +items[0] +")"); // если в массиве вставить номер [4] - то программа выдаст ошибку.
+
+
+
         }
 
     }
