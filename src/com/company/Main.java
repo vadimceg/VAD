@@ -53,8 +53,24 @@ public class Main {
         System.out.println(message);
 
         System.out.println("(" +items[0] +")"); // если в массиве вставить номер [4] - то программа выдаст ошибку.
+        System.out.println(" ");
 
+        //P6
+        String[] items2 = new String[4];
+        items2[0] = "Shirt";
+        items2[1] = "Belt";
+        items2[2] = "Scarf";
+        items2[3] = "Skirt";
 
+        message = "- " +custName +" wants to purchase " +items2.length +" items.";
+        System.out.println(message);
+
+        System.out.println("Items purchased: ");
+        for (String item : items2) {
+            System.out.println(item + ". ");
+        }
+
+        
 
         }
 
